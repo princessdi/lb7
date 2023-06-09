@@ -1,0 +1,30 @@
+main.container
+    section.hero 
+        img(src=require("./images/hero.png"), alt="family")
+        div.hero-trip 
+            h2 Choose a trip
+            form.trip-options#tropOptions
+                select#date(name="date")
+                    option(value="-1") Date  
+                select#place(name="place")
+                    option(value="-1") Place  
+                input(type="submit" value="Submit")
+    section.trip-offers 
+        h2 Special offers
+            span#searchBy
+        div#tripOffers
+            div.trip-offer-item
+                img(src=require("./images/CROATIA.png"), alt="city")
+                p CROATIA - 21.07
+            div.trip-offer-item
+                img(src=require("./images/BARCELONA.png"), alt="city")
+                p BARCELONA - 21.07
+            div.trip-offer-item
+                img(src=require("./images/FRANCE.png"), alt="city")
+                p FRANCE - 21.07
+    section.contacts#contacts 
+        h2 Our contacts
+        div.contacts-wrapper
+            a(href="mailto: voyagecharmant@gmail.com")  voyagecharmant@gmail.com
+            a(href="tel: +38 063 087 2378")  +38 063 087 2378
+

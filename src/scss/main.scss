@@ -1,0 +1,164 @@
+@import url(reset.scss);
+@import url("https://fonts.googleapis.com/css2?family=Hanuman:wght@400;700&display=swap");
+
+$text-color: #1012a8;
+$bg-color: #daf5ff;
+$secondary-bg-color: #b0daff;
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+section {
+  text-align: center;
+}
+
+body {
+  font-family: "Hanuman", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  background-color: $bg-color;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 1200px) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.logo {
+  max-width: 400px;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  @media screen and (max-width: 1200px) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.navbar-menu > a {
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 47px;
+  color: $text-color;
+  @media screen and (max-width: 1200px) {
+    font-size: 25px;
+  }
+}
+
+.hero {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 1200px) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.hero > img {
+  width: 50vw;
+}
+
+.hero-trip {
+  & h2 {
+    font-size: 40px;
+    line-height: 59px;
+    color: $text-color;
+  }
+}
+
+.trip-options {
+  background-color: $secondary-bg-color;
+  padding: 75px 33px 20px;
+  & > * {
+    display: block;
+    width: 100%;
+    background-color: $bg-color;
+    border: none;
+    padding: 10px 35px;
+    font-size: 40px;
+    line-height: 59px;
+    color: $text-color;
+  }
+  & > *:not(:last-child) {
+    margin-bottom: 65px;
+  }
+}
+
+.trip-offers > h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 70px;
+  color: $text-color;
+}
+
+#tripOffers {
+  background-color: $secondary-bg-color;
+  padding: 40px 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.trip-offer-item {
+  width: 505px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.trip-offer-item > p {
+  font-size: 32px;
+  line-height: 47px;
+  font-weight: 700;
+  color: $text-color;
+}
+
+.contacts {
+  margin-top: 100px;
+  & h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 70px;
+    color: $text-color;
+  }
+  &-wrapper {
+    padding: 43px 50px;
+    background-color: $secondary-bg-color;
+    & > a {
+      text-decoration: none;
+      display: block;
+      font-size: 48px;
+      line-height: 70px;
+      color: $text-color;
+    }
+  }
+}
+
+footer > p {
+  font-size: 48px;
+  line-height: 70px;
+  color: $text-color;
+  margin-top: 50px;
+}
